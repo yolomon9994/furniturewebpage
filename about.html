@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,800&display=swap" rel="stylesheet">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+    <title>About</title>
+</head>
+<body>
+    <section class="container2" style="overflow: hidden;">
+        <header>
+            <img src="images/Hanging Lamp.png" >
+            <div class="navbar">
+                <div class="logo">S_A FURTINURE</div>
+                <ul class="navlinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="togglebtn">
+                    <i class="ri-menu-line"></i>
+                </div>
+            </div>
+            <div class="dropdown">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </div>
+        </header>
+<div class="hero2">
+    <div class="main2">
+    <h1>About Us</h1>
+    <h3>#1 Furnitures</h3>
+    <p>Welcome to S_A Furniture, we prorvide excellent quality Furnitures for your homes. Click the button below to order now. <br> <b> <span> (Quality is assured, satisfaction is guarenteed.)</span> </b></p>
+    <a href=""><button>Shop Now</button></a>
+</div>
+<div class="image2" style="overflow: hidden;" >
+    <div class="pic"></div>
+</div>
+</div>
+<script src="https://unpkg.com/scrollreveal"></script>
+<script src="script.js"></script>
+<script>
+    var togglebtn = document.querySelector('.togglebtn')
+var togglebtnIcon = document.querySelector('.togglebtn i')
+var dropdownmenu = document.querySelector('.dropdown')
+
+togglebtn.onclick = function(){
+    dropdownmenu.classList.toggle('open');
+    var isOpen = dropdownmenu.classList.contains('open')
+
+    togglebtnIcon.classList = isOpen
+    ? "ri-close-line"
+    : "ri-menu-line"
+}
+</script>
+</body>
+</html>
